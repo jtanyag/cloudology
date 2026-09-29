@@ -1,0 +1,11 @@
+{
+  "name": "cloudology",
+  "private": true,
+  "scripts": {
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix client install --include=dev && npm --prefix client run build && npm --prefix server install --include=dev && npm --prefix server run build",
+    "start": "node server/dist/index.js"
+  },
+  "engines": { "node": ">=20" }
+}
